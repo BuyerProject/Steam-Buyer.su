@@ -15,6 +15,13 @@ Authorization goes with the help of a token consisting of 24 characters, this to
 ### Rate Limited
  - check balance, order - 100 in 60 sek
  - create order - 6 in 60 sek
+ - 
+#### Responses 429
+    {
+        "success":false,
+        "body":{},
+        "message":"Rate limit exceeded: 2 per 1 minute"
+    }
 
 #### Responses 422
 
@@ -108,7 +115,7 @@ Transaction statuses:
 * cancel (inactive): The deal has been canceled
 * error (inactive): The transaction was completed with an error
 * moderation (wait): The deal is being moderated
-* sucess (inactive): Successful balance transfer
+* success (inactive): Successful balance transfer
 
 Explanation of the error:
 
