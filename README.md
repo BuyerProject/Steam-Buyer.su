@@ -13,8 +13,8 @@ Authorization goes with the help of a token consisting of 24 characters, this to
 - POST
 
 ### Rate Limited
- - check balance/order - 100 in 60 sek
- - create order - 10 in 60 sek
+ - check balance, order - 100 in 60 sek
+ - create order - 6 in 60 sek
 
 #### Responses 422
 
@@ -47,6 +47,7 @@ Balance and  hold balance
     "body": {
         "balance": 0,
         "hold_balance": 0
+        }
     }
 Parameters:
 
@@ -65,6 +66,7 @@ Creating a balance sale request, the transaction may go to manual moderation, bu
     "message": "",
     "body": {
         "order_id": 0
+        }
     }
 Parameters:
 
@@ -92,6 +94,7 @@ Get information about the transaction
         "user_wallet_iso": "EUR",
         "get_amount_rub": 0,
         "status": "moderation",
+        }
     }
 Parameters:
 
