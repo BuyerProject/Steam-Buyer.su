@@ -91,7 +91,7 @@ Get information about the transaction
         "amount_rub": 0,
         "user_wallet_iso": "EUR",
         "get_amount_rub": 0,
-        "status": "success",
+        "status": "moderation",
     }
 Parameters:
 
@@ -105,6 +105,7 @@ Transaction statuses:
 * cancel (inactive): The deal has been canceled
 * error (inactive): The transaction was completed with an error
 * moderation (wait): The deal is being moderated
+* sucess (inactive): Successful balance transfer
 
 Explanation of the error:
 
