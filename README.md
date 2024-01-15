@@ -44,7 +44,7 @@ Authorization goes with the help of a token consisting of 24 characters, this to
 
 ### GET `/user/balance`
 
-Balance and  hold balance
+Balance and hold balance
 
 #### Successful Response
 
@@ -130,5 +130,27 @@ Explanation of the error:
 * unknown_error: The transaction ended with an unknown error
 * an_insecure_account: The account has a high chance of being banned
 * family_view: Parental controls are set on the account
+
+## Other
+
+### GET `/other/currency`
+
+Receiving quotes that are used in the bot, updated every 6 hours
+
+#### Successful Response
+
+    {
+    "success": true,
+    "message": "",
+    "body": {
+        "timestamp": 0,
+        "base": "EUR",
+        "rates": {}
+        }
+    }
+Parameters:
+
+ * apikey (required): Your key that you received inside the telegram bot
+
 
 ## That's all, if you have any questions, feel free to contact the bot support, we will be happy to help you set everything up
