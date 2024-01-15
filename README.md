@@ -120,12 +120,15 @@ Transaction statuses:
 Explanation of the error:
 
 * invalid_login_secure: Your token is not valid
+* wrong_format_steam_login_secure: Invalid token format
 * community_ban: Your account has community_ban
 * invalid_proxy: The error occurred on our side, please try again later
-* less than the minimum amount: Your account balance is less than the minimum
+* less_than_the_minimum_amount: Your account balance is less than the minimum
 * bot_not_place_item: The bot was unable to expose the item, please try again later
 * bot_not_has_free_account: The bot has run out of accounts to accept the balance
 * account_is_died: Your account died during the transfer
 * unknown_error: The transaction ended with an unknown error
+* an_insecure_account: The account has a high chance of being banned
+* family_view: Parental controls are set on the account
 
 ## That's all, if you have any questions, feel free to contact the bot support, we will be happy to help you set everything up
