@@ -76,6 +76,8 @@ Creating a balance sale request, the transaction may go to manual moderation, bu
         }
     }
 Parameters:
+Additional authorization method:
+Instead of steam_refresh_token you can pass two parameters store_steam_login_secure && community_steam_login_secure Steam has separated access tokens. Or you can simply pass steam_refresh_token.
 
  * steam_refresh_token (required): A token for temporary access to your account login.steampowered.com
  * apikey (required): Your key that you received inside the telegram bot
@@ -121,6 +123,7 @@ Transaction statuses:
 Explanation of the error:
 
 * invalid_login_secure: Your token is not valid
+* not_a_unique_account: The account was uploaded by another user. You must try again in 5 minutes
 * wrong_format_steam_login_secure: Invalid token format
 * community_ban: Your account has community_ban
 * invalid_proxy: The error occurred on our side, please try again later
