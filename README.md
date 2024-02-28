@@ -82,6 +82,7 @@ Instead of steam_refresh_token you can pass two parameters store_steam_login_sec
  * steam_refresh_token (required): A token for temporary access to your account login.steampowered.com
  * apikey (required): Your key that you received inside the telegram bot
  * referral_id (options): ID to receive a referral fee in the form of 5% of the amount received
+ * send_telegram_message (options): Allows you to disable messages in telegram
 
 A little bit about the referral system:
 
@@ -99,6 +100,7 @@ Get information about the transaction
     "body": {
         "user_id": 0,
         "user_steam_id": 0,
+        "buyer_steam_id": 0,
         "amount_rub": 0,
         "get_amount_rub": 0,
         "to_receive": 0,
